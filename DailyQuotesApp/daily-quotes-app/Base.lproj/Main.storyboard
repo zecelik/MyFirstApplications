@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="daily_quotes_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vG-eF-rmQ">
+                                <rect key="frame" x="122" y="691" width="148" height="48"/>
+                                <color key="backgroundColor" red="0.85507417929292928" green="0.83141867243836465" blue="0.80619284197938612" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="BEP-4Y-Rbd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Yeni Cümle">
+                                    <color key="titleColor" red="0.99607843159999998" green="0.97254902119999997" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="newQuoteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXL-Fg-CBh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Rc-hq-zSC">
+                                <rect key="frame" x="16" y="318" width="361" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="uOW-Ak-9LC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="POZİTİF SÖZLER (4)" translatesAutoresizingMaskIntoConstraints="NO" id="ES8-Lv-vxg">
+                                <rect key="frame" x="-32" y="30" width="240" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="POZİTİF SÖZLER (2)" translatesAutoresizingMaskIntoConstraints="NO" id="lgk-cY-eZa">
+                                <rect key="frame" x="193" y="144" width="240" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="POZİTİF SÖZLER (13)" translatesAutoresizingMaskIntoConstraints="NO" id="JTo-aX-nE0">
+                                <rect key="frame" x="-84" y="224" width="560" height="405"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99607843159999998" green="0.97254902119999997" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ES8-Lv-vxg" secondAttribute="trailing" constant="185" id="FQ8-VD-C1H"/>
+                            <constraint firstItem="JTo-aX-nE0" firstAttribute="centerX" secondItem="5Rc-hq-zSC" secondAttribute="centerX" id="Ik8-nt-kgh"/>
+                            <constraint firstItem="5Rc-hq-zSC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P2N-jP-DCL"/>
+                            <constraint firstItem="lgk-cY-eZa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="193" id="RVt-R8-V9y"/>
+                            <constraint firstItem="lgk-cY-eZa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="TWG-Ch-ca2"/>
+                            <constraint firstItem="5Rc-hq-zSC" firstAttribute="top" secondItem="lgk-cY-eZa" secondAttribute="bottom" constant="46" id="a6d-G5-i4z"/>
+                            <constraint firstItem="ES8-Lv-vxg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-48" id="aCh-fo-W8N"/>
+                            <constraint firstItem="JTo-aX-nE0" firstAttribute="top" secondItem="ES8-Lv-vxg" secondAttribute="bottom" constant="66" id="bmg-fA-21M"/>
+                            <constraint firstItem="ES8-Lv-vxg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-29" id="eDd-3U-tfF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JTo-aX-nE0" secondAttribute="trailing" constant="-99" id="ehM-Lc-5qe"/>
+                            <constraint firstItem="JTo-aX-nE0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gww-zb-LbX"/>
+                            <constraint firstItem="5Rc-hq-zSC" firstAttribute="centerX" secondItem="4vG-eF-rmQ" secondAttribute="centerX" id="hB3-dV-qZP"/>
+                            <constraint firstItem="4vG-eF-rmQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="l72-aU-2Ad"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lgk-cY-eZa" secondAttribute="trailing" constant="-56" id="mhH-jv-KwY"/>
+                            <constraint firstItem="5Rc-hq-zSC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sQi-c4-66M"/>
+                            <constraint firstItem="5Rc-hq-zSC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="w3K-G5-Opi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4vG-eF-rmQ" secondAttribute="bottom" constant="79" id="xgx-GT-iag"/>
+                            <constraint firstItem="4vG-eF-rmQ" firstAttribute="top" secondItem="JTo-aX-nE0" secondAttribute="bottom" constant="62" id="zJp-O6-IE8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="quoteLabel" destination="5Rc-hq-zSC" id="Vh2-Ej-XNS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="113.38028169014085"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="POZİTİF SÖZLER (13)" width="1563" height="1563"/>
+        <image name="POZİTİF SÖZLER (2)" width="500" height="500"/>
+        <image name="POZİTİF SÖZLER (4)" width="500" height="500"/>
+    </resources>
+</document>
