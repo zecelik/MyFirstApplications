@@ -1,8 +1,9 @@
 
-Dress Shopping List App
+# Dress Shopping List App
+
 This mobile application allows users to easily list and track dresses they plan to buy. The app enables saving details such as the dress name, price, and size.
 
-Features:
+## Features:
 - Add, edit, and delete dresses
 - Dress details: Name, size, price
 - User-friendly interface
